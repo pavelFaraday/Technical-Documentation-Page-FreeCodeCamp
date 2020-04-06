@@ -9,6 +9,11 @@
 a {
     text-decoration: none;
 }
+body {
+  font-family: 'Lato', sans-serif;
+  background-color: var(--Body_background_color);
+  line-height: 1.5rem;
+}
 :root {
     --Body_background_color: rgb(255,255,255);
     --Font_color_h1: rgb(0,0,0);
@@ -16,21 +21,18 @@ a {
     --Info_Section_border_color: rgb(155,162,162);
     --Code_bacground: rgb(247,247,247);
 }
-body {
-  font-family: 'Lato', sans-serif;
-  background-color: var(--Body_background_color);
-}
 
 
 /* Self Styles */
 .flex {
     display: flex;
+    flex-direction: column;
 }
-.flex_item_nav {
-    /* background-color: aqua; */
-    width: 30%;
-    max-width: 25%;
-    height: auto;
+#navbar {
+    width: 310px;
+    max-width: 310px;
+    position: fixed;
+    top: 0px;
 }
 .flex_item_nav h1 {
     font-weight: 100;
@@ -40,15 +42,15 @@ body {
     padding: 1rem;
 }
 .flex_item_nav ul {
-    height: 88%;
-    padding: 0;
+    width: 100%;
+    height: 90vh;
     overflow-y: auto;
     overflow-x: hidden;
 }
 .flex_item_nav ul li {
     display: block;
     border-top: 1px solid rgb(77,78,83);
-    padding: .8rem 0rem .8rem 2rem;
+    padding: .7rem 0rem .7rem 2rem;
 }
 .flex_item_nav ul li a{
     color: var(--Font_color_P);
@@ -57,19 +59,71 @@ body {
     font-family: sans-serif;
 }
 
-
-
-
-
-
-
-
-
-
-
-
-.flex_item_main {
+#main-doc {
     width: 100%;
+    border-left: 3px solid var(--Info_Section_border_color);
+    padding: 2rem 2rem;
+    margin-left: 310px;
 }
+.main-section h2{
+    text-transform: capitalize;
+    font-size: 1.8rem;
+    font-weight: 100;
+    color: var(--Font_color_h1);
+    margin: 1.5rem 0;
+}
+.main-section p {
+    padding-left: 1rem;
+    color: var(--Font_color_P);
+    padding-bottom: 1rem;
+    padding-top: 1rem;
+}
+.main-section ul {
+    padding-left: 5rem;
+    color: var(--Font_color_P);
+}
+.main-section ul li {
+    padding-bottom: 1rem;
+}
+.main-section code {
+    background-color: var(--Code_bacground);
+    margin-left: 2rem;
+    padding: 1rem;
+    display: block;
+    color: var(--Font_color_P);
+}
+
+@media screen and (max-width: 700px) {
+    .flex {
+        display: block;
+    };
+    
+    /* It doesn't work !!!! */
+    #navbar {
+        background-color: blueviolet;
+        z-index: 1;
+        position: absolute;
+        top: 0;
+    }
+     /* It doesn't work !!!! */
+
+    .flex_item_nav h1{
+        width: 98vw;
+        text-align: center;
+    }
+    #main-doc {
+        margin-left: 0;
+        border-left: none;
+        position: absolute;
+        top: 220px; 
+    }
+    .flex_item_nav ul {
+        width: 98vw;
+        height: 194px;
+        margin: 0 auto;
+        border-bottom: 2px solid var(--Info_Section_border_color);
+    }
+}
+
 
 
