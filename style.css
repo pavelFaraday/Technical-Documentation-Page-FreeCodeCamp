@@ -1,0 +1,26 @@
+/* Global styles */
+@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+li {
+    list-style-type: none;
+}
+a {
+    text-decoration: none;
+}
+:root {
+    --Body_background_color: rgb(255,255,255);
+    --Font_color_h1: rgb(0,0,0);
+    --Font_color_P: rgb(104,105,109);
+    --Info_Section_border_color: rgb(155,162,162);
+}
+body {
+  font-family: 'Lato', sans-serif;
+}
+
+
+/* Self Styles */
