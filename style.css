@@ -6,9 +6,6 @@
     padding: 0;
     box-sizing: border-box;
 }
-li {
-    list-style-type: none;
-}
 a {
     text-decoration: none;
 }
@@ -17,6 +14,7 @@ a {
     --Font_color_h1: rgb(0,0,0);
     --Font_color_P: rgb(104,105,109);
     --Info_Section_border_color: rgb(155,162,162);
+    --Code_bacground: rgb(247,247,247);
 }
 body {
   font-family: 'Lato', sans-serif;
@@ -24,3 +22,13 @@ body {
 
 
 /* Self Styles */
+.flex {
+    display: flex;
+}
+.flex_item_nav {
+    background-color: aqua;
+}
+.flex_item_main {
+    background-color: burlywood;
+    width: 100%;
+}
