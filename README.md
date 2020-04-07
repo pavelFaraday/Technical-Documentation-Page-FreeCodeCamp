@@ -35,4 +35,4 @@ FreeCodeCamp Technical Documentation Page with HTML and CSS (No Frameworks) for 
 
 **User Story #15:** My Technical Documentation page should use at least one media query.
 
-You can see this project LIVE at the following URL:
+You can see this project LIVE at the following URL:  https://pavelfaraday.github.io/Technical-Documentation-Page-FreeCodeCamp/
